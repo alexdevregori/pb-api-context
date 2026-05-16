@@ -13,11 +13,11 @@ Once, per engineer:
 
 ```bash
 # In Claude Code
-/plugin marketplace add alexdegregori/pb-api-context
+/plugin marketplace add alexdevregori/pb-api-context
 /plugin install productboard-api@your-org-tools
 ```
 
-Replace `alexdegregori/pb-api-context` with the actual GitHub path. After install, the skill activates automatically whenever you mention Productboard in a conversation with Claude. Updates land automatically when the daily watcher commits to `main` — engineers run `/plugin update` to pull them.
+Replace `alexdevregori/pb-api-context` with the actual GitHub path. After install, the skill activates automatically whenever you mention Productboard in a conversation with Claude. Updates land automatically when the daily watcher commits to `main` — engineers run `/plugin update` to pull them.
 
 ## Use
 
@@ -63,7 +63,7 @@ The data model document and the skill instructions are the highest-leverage part
 **The workflow is just regular Claude Code:**
 
 ```bash
-git clone git@github.com:alexdegregori/pb-api-context.git
+git clone git@github.com:alexdevregori/pb-api-context.git
 cd pb-api-context
 claude
 ```
