@@ -1,0 +1,32 @@
+[
+  {
+    "name": "list_features_in_release_python",
+    "prompt": "Write a Python function that takes a release ID and returns all features linked to that release. Use the requests library.",
+    "expected_language": "python",
+    "must_reference_spec_files": ["entities.yaml"]
+  },
+  {
+    "name": "fetch_notes_apps_script",
+    "prompt": "Write a Google Apps Script function that lists all notes created in the last 7 days and writes them to a Google Sheet.",
+    "expected_language": "apps_script",
+    "must_reference_spec_files": ["notes.yaml"]
+  },
+  {
+    "name": "feature_with_custom_field_node",
+    "prompt": "Write a Node.js script that fetches a single feature by ID and prints all of its fields including custom fields with their human-readable names. The runtime is Node 18+.",
+    "expected_language": "javascript",
+    "must_reference_spec_files": ["entities.yaml"]
+  },
+  {
+    "name": "create_note_with_customer_curl",
+    "prompt": "Show me a curl command that creates a textNote with a customer email and links it to a feature ID.",
+    "expected_language": "shell",
+    "must_reference_spec_files": ["notes.yaml"]
+  },
+  {
+    "name": "objective_hierarchy_python",
+    "prompt": "Write a Python function that takes an objective ID and returns the full nested tree of child objectives and key results underneath it.",
+    "expected_language": "python",
+    "must_reference_spec_files": ["entities.yaml"]
+  }
+]

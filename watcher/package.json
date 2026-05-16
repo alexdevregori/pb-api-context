@@ -1,0 +1,17 @@
+{
+  "name": "pb-api-context-watcher",
+  "version": "1.0.0",
+  "description": "Keeps the Productboard API skill in sync with the live OpenAPI specs.",
+  "type": "module",
+  "scripts": {
+    "check": "node watch.mjs",
+    "check:only": "node watch.mjs --check-only",
+    "force": "node watch.mjs --force"
+  },
+  "dependencies": {
+    "yaml": "^2.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "your-org-tools",
+  "version": "1.0.0",
+  "description": "Internal Claude tools for your organization. Currently distributes the Productboard API skill.",
+  "owner": {
+    "name": "Your Org",
+    "email": "ops@your-org.example.com"
+  },
+  "plugins": [
+    {
+      "name": "productboard-api",
+      "description": "Up-to-date Productboard API context for code generation. Bundles a skill with auto-refreshed OpenAPI specs from the live developer portal.",
+      "version": "1.0.0",
+      "source": "./plugins/productboard-api",
+      "category": "integrations"
+    }
+  ]
+}

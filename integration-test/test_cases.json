@@ -1,0 +1,40 @@
+[
+  {
+    "name": "read_configurations",
+    "prompt": "Write a Python function `get_feature_config(token)` that calls GET /v2/entities/configurations/feature with the given bearer token and returns the parsed JSON response. Use the requests library. Just the function — no main block.",
+    "verifies": "skill teaches Claude the basics of auth headers and GET requests",
+    "execution": {
+      "function_name": "get_feature_config",
+      "args": ["{{TOKEN}}"],
+      "expect_dict_with_keys": ["data"]
+    },
+    "creates_entities": false
+  },
+  {
+    "name": "list_notes",
+    "prompt": "Write a Python function `list_notes(token)` that calls GET /v2/notes with the given bearer token, returning the first page of notes. Use requests. Just the function.",
+    "verifies": "Claude gets the list pattern right (auth, base URL, response shape)",
+    "execution": {
+      "function_name": "list_notes",
+      "args": ["{{TOKEN}}"],
+      "expect_dict_with_keys": ["data"]
+    },
+    "creates_entities": false
+  },
+  {
+    "name": "create_note_with_customer",
+    "prompt": "Write a Python function `create_note(token, name, content, customer_email)` that creates a textNote in Productboard via POST /v2/notes. The note should have the given name and content, with a customer relationship to the given email (as a user). Use the requests library. Return the created note's ID. Just the function.",
+    "verifies": "Claude gets the request body shape right for note creation, including the relationships array and customer email resolution",
+    "execution": {
+      "function_name": "create_note",
+      "args": ["{{TOKEN}}", "{{ENTITY_PREFIX}} test note", "Integration test content", "smoke-test@example.com"],
+      "expect_string_uuid": true,
+      "store_result_as": "created_note_id"
+    },
+    "creates_entities": true,
+    "cleanup": {
+      "method": "DELETE",
+      "path": "/v2/notes/{{created_note_id}}"
+    }
+  }
+]

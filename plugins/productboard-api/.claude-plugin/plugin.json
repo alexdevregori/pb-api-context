@@ -1,0 +1,5 @@
+{
+  "name": "productboard-api",
+  "version": "1.0.0",
+  "description": "Up-to-date Productboard API context for code generation. Bundles a skill with auto-refreshed OpenAPI specs from the live developer portal."
+}

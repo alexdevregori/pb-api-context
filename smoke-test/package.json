@@ -1,0 +1,15 @@
+{
+  "name": "pb-api-context-smoke-test",
+  "version": "1.0.0",
+  "description": "Weekly smoke test that verifies the productboard-api skill generates valid code.",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "yaml": "^2.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
