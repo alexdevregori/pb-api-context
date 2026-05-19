@@ -14,7 +14,7 @@ Once, per engineer:
 ```bash
 # In Claude Code
 /plugin marketplace add alexdevregori/pb-api-context
-/plugin install productboard-api@your-org-tools
+/plugin install productboard-api@pb-api-context
 ```
 
 Replace `alexdevregori/pb-api-context` with the actual GitHub path. After install, the skill activates automatically whenever you mention Productboard in a conversation with Claude. Updates land automatically when the daily watcher commits to `main` — engineers run `/plugin update` to pull them.
