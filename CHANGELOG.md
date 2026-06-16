@@ -1,5 +1,12 @@
 # Productboard API Spec Changelog
 
+## 2026-06-16
+
+### `entities.yaml`
+- `GET /entities`: params added: query:teams[id], query:teams[name]
+- Schemas added: EntityUpdateMetadata, ApiSourceUpdate
+- Schema `EntitySearchFieldFilters`: properties added: teams
+
 ## 2026-06-10
 
 ### `notes.yaml`
