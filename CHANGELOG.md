@@ -1,5 +1,10 @@
 # Productboard API Spec Changelog
 
+## 2026-06-18
+
+### `entities.yaml`
+- Schema `EntitySearchCustomFieldFilterValue`: properties added: isSet
+
 ## 2026-06-16
 
 ### `entities.yaml`
