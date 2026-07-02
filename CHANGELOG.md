@@ -1,5 +1,11 @@
 # Productboard API Spec Changelog
 
+## 2026-07-02
+
+### `notes.yaml`
+- Schemas added: NoteSearchSearch
+- Schema `NoteSearchData`: properties added: search
+
 ## 2026-06-18
 
 ### `entities.yaml`
