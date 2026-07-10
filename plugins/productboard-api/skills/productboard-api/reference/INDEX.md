@@ -2,7 +2,7 @@
 
 High-level map of endpoints across all spec files. Use this to decide which spec file to load before generating code.
 
-_Last generated: 2026-07-02_
+_Last generated: 2026-07-10_
 
 ## `analytics.yaml` — Analytics
 
@@ -54,13 +54,14 @@ Productboard API v2 for managing workspace members and their team memberships. U
 
 Productboard API v2 for managing notes and their relationships to other entities. Use these endpoints to create, list, update, and delete notes, and to link them to entities, companies, and other resources.
 
-**Endpoints (8):**
+**Endpoints (9):**
 
 - `POST, GET` /notes
 - `GET` /notes/configurations
 - `GET` /notes/configurations/{type}
 - `POST` /notes/search
 - `GET, PATCH, DELETE` /notes/{id}
+- `POST` /notes/{id}/comments
 - `GET, POST` /notes/{id}/relationships
 - `PUT` /notes/{id}/relationships/customer
 - `DELETE` /notes/{id}/relationships/{targetType}/{targetId}

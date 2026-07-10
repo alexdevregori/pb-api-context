@@ -1,5 +1,10 @@
 # Productboard API Spec Changelog
 
+## 2026-07-10
+
+### `notes.yaml`
+- Endpoints added: `/notes/{id}/comments`
+
 ## 2026-07-02
 
 ### `notes.yaml`
