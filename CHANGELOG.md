@@ -1,5 +1,10 @@
 # Productboard API Spec Changelog
 
+## 2026-07-20
+
+### New spec files
+- `customer-scores.yaml`
+
 ## 2026-07-10
 
 ### `notes.yaml`

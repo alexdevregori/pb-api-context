@@ -2,7 +2,7 @@
 
 High-level map of endpoints across all spec files. Use this to decide which spec file to load before generating code.
 
-_Last generated: 2026-07-10_
+_Last generated: 2026-07-20_
 
 ## `analytics.yaml` — Analytics
 
@@ -11,6 +11,14 @@ Productboard API v2 for listing analytics and member activity data. Use these en
 **Endpoints (1):**
 
 - `GET` /analytics/member-activities
+
+## `customer-scores.yaml` — Entities
+
+Productboard API v2 for reading the aggregated customer score of a product hierarchy entity.
+
+**Endpoints (1):**
+
+- `GET` /entities/{id}/score
 
 ## `entities.yaml` — Entities
 
