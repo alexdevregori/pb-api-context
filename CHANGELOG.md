@@ -1,5 +1,18 @@
 # Productboard API Spec Changelog
 
+## 2026-09-09
+
+### `entities.yaml`
+- `GET /entities`: params added: ref:#/components/parameters/PbBeta
+- `GET /entities/{id}`: params added: ref:#/components/parameters/PbBeta
+- `POST /entities/search`: params added: ref:#/components/parameters/PbBeta
+- `GET /entities/fields/{id}/values`: params added: query:query
+- Schemas added: EntityRelationshipBulkCreate, EntityRelationshipBulkItemStatus, EntityRelationshipBulkItemResult, EntityRelationshipsBulkResponseBody, DocumentReferenceFieldValue
+
+### `notes.yaml`
+- **Endpoints removed (breaking):** `/notes/{id}/comments`
+- **Schemas removed (breaking):** UserReference, RelationshipsFieldValue
+
 ## 2026-07-20
 
 ### New spec files
