@@ -2,7 +2,7 @@
 
 High-level map of endpoints across all spec files. Use this to decide which spec file to load before generating code.
 
-_Last generated: 2026-09-09_
+_Last generated: 2026-10-09_
 
 ## `analytics.yaml` — Analytics
 

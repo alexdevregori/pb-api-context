@@ -1,5 +1,14 @@
 # Productboard API Spec Changelog
 
+## 2026-10-09
+
+### `entities.yaml`
+- Schemas added: RelationshipConfigurationField, RelationshipFields, RelationshipFieldValue, RelationshipFieldsUpdate, RelationshipFieldValueUpdate
+- **Schemas removed (breaking):** EntityRelationshipBulkCreate, EntityRelationshipBulkItemStatus, EntityRelationshipBulkItemResult, EntityRelationshipsBulkResponseBody, Field, FieldReference, FieldOrigin, FieldCreateType, TeamsFieldAssign
+- Schema `ConfigurationRelationship`: properties added: fields
+- Schema `EntityRelationship`: properties added: fields
+- Schema `EntityRelationshipCreate`: properties added: fields
+
 ## 2026-09-09
 
 ### `entities.yaml`
